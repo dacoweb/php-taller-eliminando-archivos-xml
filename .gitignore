@@ -1,0 +1,4 @@
+temp/*
+!/temp/.gitkeep
+src-code/*
+!/src-code/.gitkeep
