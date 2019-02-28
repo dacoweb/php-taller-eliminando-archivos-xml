@@ -1,0 +1,28 @@
+version: "3.5"
+
+services:
+  nginx:
+    build:
+      context: ./.docker/nginx/
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src-code/:/var/www/html/
+    working_dir: /var/www/html/
+    networks:
+      - phpapp_ntw
+  php:    
+    build:
+      context: ./.docker/phpfpm/
+    environment:
+      XDEBUG_RPORT: 9200
+      XDEBUG_IDEKEY: VSCODE
+      PHP_ROOT_DIR: /usr/local/etc
+    volumes:
+      - ./src-code/:/var/www/html/
+    working_dir: /var/www/html/
+    networks:
+      - phpapp_ntw
+networks:
+    phpapp_ntw:
+      driver: bridge
