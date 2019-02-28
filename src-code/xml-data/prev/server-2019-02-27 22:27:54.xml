@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="S123" xsi:noNamespaceSchemaLocation="server.xsd">
+  <device>Server 49</device>
+  <details>
+    <model>X1235</model>
+    <ip>192.168.20.1</ip>
+    <factory>Dell</factory>
+    <description>Norway</description>
+  </details>
+  <item>
+    <code>C1</code>
+    <note>V C1</note>
+    <value>1.00</value>
+    <prev-value>2.00</prev-value>
+  </item>
+  <item>
+    <code>C2</code>
+    <note>V C2</note>
+    <value>1.00</value>
+    <prev-value>2.00</prev-value>
+  </item>
+  <item>
+    <code>C2</code>
+    <note>V C2</note>
+    <value>1.00</value>
+    <prev-value>2.00</prev-value>
+  </item>
+</server>
